@@ -5,5 +5,5 @@
 use Flyway
 
 ```sh
-$ ./gradlew :eule-db:flywayMigrate
+$ ./gradlew flywayMigrate
 ```
