@@ -1,0 +1,17 @@
+datasources:
+  eule:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    dialect: mysql
+    host: ${EULE_DB_HOST:`127.0.0.1`}
+    port: ${EULE_DB_PORT:`13306`}
+    db-name: ${EULE_DB_NAME:`eule_db`}
+    url: jdbc:mysql://${datasources.eule.host}:${datasources.eule.port}/${datasources.eule.db-name}
+    username: ${EULE_DB_USER:`app`}
+    password: ${EULE_DB_PASSWORD:`a4EG5ZP2rBm87Ctx`}
+    auto-commit: false
+    pool-name: eule-db-pool
+    # connection-timeout:
+    # idle-timeout:
+    # minimum-idle:
+    # maximum-pool-size:
+    # max-lifetime:
