@@ -6,10 +6,12 @@ import io.micronaut.data.annotation.Id;
 import io.micronaut.data.annotation.MappedEntity;
 import io.micronaut.data.annotation.Version;
 import io.micronaut.data.model.naming.NamingStrategies;
+import io.micronaut.serde.annotation.Serdeable;
 import java.time.LocalDateTime;
 import lombok.Builder;
 
 @MappedEntity(namingStrategy = NamingStrategies.Raw.class)
+@Serdeable
 @Builder(toBuilder = true)
 public record BackofficeProperties(
     @Id @NonNull String propertyName,
