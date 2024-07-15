@@ -7,14 +7,13 @@ import com.s_kugel.schneider.eule.repository.StaffRepository;
 import de.huxhorn.sulky.ulid.ULID;
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
 import jakarta.inject.Inject;
+import java.time.LocalDateTime;
+import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDateTime;
-import java.util.List;
-
-@MicronautTest
+@MicronautTest(environments = "eule-db")
 @Slf4j
 class StaffRepositoryTest {
 
